@@ -8,5 +8,8 @@ function changeColorPicker(e){
     console.log(e)
 }
 function changePinSize(e){
-        console.log(e)
+    console.log(e)
+}
+function downloadImg(e){
+    console.log(e)
 }
