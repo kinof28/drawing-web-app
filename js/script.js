@@ -43,7 +43,7 @@ const draw =(x1,y1)=>{
     y=y1;
 }
 function refresh(){
-    console.log("refresh")
+    context.clearRect(0, 0, canvas. width, canvas. height); 
 }
 function changeColor(e){
     let act;
@@ -67,6 +67,6 @@ function changeColorPicker(e){
 function changePinSize(e){
     pinSize=e;
 }
-function downloadImg(e){
-    console.log(e)
+function downloadImg(){
+    document.getElementById('download-link').href=canvas.toDataURL();
 }
