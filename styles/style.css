@@ -18,7 +18,6 @@ a:active{
 }
 canvas{
     border: black 2px dashed;
-    height: 30em;
 }
 #refresh-button{
     background: rgb(214, 1, 1);
@@ -60,7 +59,7 @@ canvas{
     border: black 1px solid;
     margin:0px 0.3em;
 }
-.active{
+.active-color{
     transform: scale(1.3);
 }
 .color-choice:nth-child(1){
