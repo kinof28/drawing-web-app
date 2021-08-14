@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint app</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <p class="description-paragraphe">paint by holding the mouse button and moving it <a href="" class="download-link" download="my-drawing.jpg"> download my work</a> <button id="refresh-button" onclick="refresh()"> refresh </button></p>
+    <div class="options">
+        <div class="color-group">
+            <div class="color-choice active" data-color="hot-pink" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="orange" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="red" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="yellow" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="black" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="bleu" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="white" onclick="changeColor(this.data)"></div>
+            <div class="color-choice" data-color="green" onclick="changeColor(this.data)"></div>
+        </div>
+        <div><label for="color-picker">select your favorite color :</label> <input type="color" name="color-picker" id="color-picker" onchange="changeColorPicker(this.value)"> </div>
+        <div class="pin-size"><label for="pin-sizer">pin size :</label><input type="range" name="pin-sizer" id="pin-sizer" min="5" max="40" step="5" onchange="changePinSize(this.value)"></div>
+    </div>
+    <div class="drawing-canvas">
+        <canvas></canvas>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
